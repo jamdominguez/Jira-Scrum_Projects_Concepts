@@ -1,12 +1,14 @@
 # Jira-Scrum_Projects_Concepts
 Concepts of Scrum projects management with Jira agile
 
-It is based in a tutorial blog for set up.
+It is based in a [Udemy](https://www.udemy.com/) course.
 
 **Status: Completed**
 
+<div align="center">
+
 ![Jira-Scrum_Projects_Concepts](courseIcon.png)<br>
-[Gestiona tu Proyecto Scrum con Jira Agile)](https://www.udemy.com/course/scrum-jira/) by Hector Bravo
+[Gestiona tu Proyecto Scrum con Jira Agile](https://www.udemy.com/course/scrum-jira/) by Hector Bravo
 
 </div>
 
@@ -37,7 +39,7 @@ Es la herramienta numero uno para la gestión de proyectos: planificación, segu
   - Reportes
   - Integración
 
-## 1.4. Jerarquia de Jira dnetro de Atlassian:
+## 1.4. Jerarquia de Jira dentro de Atlassian:
   - Sitio/Empresa (Atlassian)
   - Productos (Jira)
   - Proyectos
@@ -52,9 +54,9 @@ Es la herramienta numero uno para la gestión de proyectos: planificación, segu
 	
 ## 1.6. Productos Atalssian integrables con Jira
 ## 1.6.1. Confluence
-Es una herramienta eficaz para crear, compartir, organizar y discutir el trabajo con tu equipo. Permite crear documentos en línea de manera colaborativa (algunas plantillas que provee: linea de tiempo, programar un proyecto, diseño de producto, minutas de reuniones)
+Es una herramienta eficaz para crear, compartir, organizar y discutir el trabajo con tu equipo. Permite crear documentos en línea de manera colaborativa (algunas plantillas que provee: linea de tiempo, programar un proyecto, diseño de producto, minutas de reuniones).
 Confluence tiene los siguientes casos de uso:
-  - Crear y compartir de todo
+  - Crear y compartir contenido
   - Versionado
   - Persona a persona
   - Inegración con Jira
@@ -65,7 +67,7 @@ Confluence tiene los siguientes casos de uso:
 Es un sistema de integración continua y automatización (como [Jenkins](https://www.jenkins.io/) o [Team City](https://www.jetbrains.com/teamcity/))
 	
 ### 1.6.3. Bitbucket
-Repositorio de código basado en git (como [GitHub](https://github.com/))
+Repositorio de código basado en [Git](https://git-scm.com/) (como [GitHub](https://github.com/))
 
 ### 1.6.4. Probar productos Atlassian
-Los productos de [Atlassian](https://www.atlassian.com/es) tienen periodos de prueba que puede ser extendidos solicitaándolo a sales@atlassian.com.
+Los productos de [Atlassian](https://www.atlassian.com/es) tienen periodos de prueba que puede ser extendidos solicitándolo a sales@atlassian.com.
