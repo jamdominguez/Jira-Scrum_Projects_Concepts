@@ -6,7 +6,7 @@ It is based in a tutorial blog for set up.
 **Status: Completed**
 
 ![Jira-Scrum_Projects_Concepts](courseIcon.png)<br>
-[Gestiona tu Proyecto Scrum con Jira Agile)](https://www.udemy.com/course/scrum-jira/) for Valentino Gagliardi
+[Gestiona tu Proyecto Scrum con Jira Agile)](https://www.udemy.com/course/scrum-jira/) by Hector Bravo
 
 </div>
 
