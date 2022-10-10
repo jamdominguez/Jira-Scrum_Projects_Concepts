@@ -41,7 +41,7 @@ Es la herramienta numero uno para la gestión de proyectos: planificación, segu
   - Integración
 
 ## 1.4. Jerarquia de Jira dentro de Atlassian:
-  - Sitio/Empresa (Atlassian)
+  - Sitio/Empresa ([Atlassian](https://www.atlassian.com/es))
   - Productos (Jira)
   - Proyectos
   - Incidencias
@@ -56,7 +56,7 @@ Es la herramienta numero uno para la gestión de proyectos: planificación, segu
 ## 1.6. Productos Atalssian integrables con Jira
 ## 1.6.1. Confluence
 Es una herramienta eficaz para crear, compartir, organizar y discutir el trabajo con tu equipo. Permite crear documentos en línea de manera colaborativa (algunas plantillas que provee: linea de tiempo, programar un proyecto, diseño de producto, minutas de reuniones).
-Confluence tiene los siguientes casos de uso:
+[Confluence](https://www.atlassian.com/es/software/confluence) tiene los siguientes casos de uso:
   - Crear y compartir contenido
   - Versionado
   - Persona a persona
@@ -265,3 +265,65 @@ Son fundamentos básicos para implementar el framework. Pueden aplicarse a cualq
 - Lanzamiento
   - Enviar entregables
   - Retrospectiva del proyecto
+
+<br><br>
+
+# 3. Crear un proyecto con Jira Software
+## 3.1. Creación del proyecto <span style="background-color:red;color:yellow">**TODO: add images**</span>
+[Atlassian](https://www.atlassian.com/es) ofrece muchas plantillas para la creación del proyecto, pero depende del tipo de producto que tengas y proyecto que quieras hacer se ofrecen unas u otras plantillas. La plantilla Scrum es propia de Desarrollo Software y de lal producto Jira Software.
+<br>
+Una vez elegida la plantilla se puede leer la descripción y tras pulsar "usar plantilla" da a elegir el tipo de proyecto. Gestionado por Equipo (next-gen) o Gestionado por la Empresa.<br>
+Si el equipo es pequeño (hasta 25 personas) y no hay mucha experiencia en Scrum / Jira, usar el primero, para proyectos más grandes o complejos y/o un equipo con conocimientos en Jira y Scrum elegir el segundo, que serí el clásico (tendría más opciones).
+<br>
+En el proceso se puede indicar que se va a conectar el proyecto Jira con otros productos de [Atlassian](https://www.atlassian.com/es) ([Bitbucket](https://bitbucket.org/) o [Confluence](https://www.atlassian.com/es/software/confluence)) o con otros externos como [GitHub](https://github.com/).
+
+## 3.2. Gestión de usuarios, grupos y permisos <span style="background-color:red;color:yellow">**TODO: add images**</span>
+- Una vez creado el proyecto se requiere invitar a los componentes del equipo al mismo. Hay dos modos de hacerlo:
+  - People (menu superior). Aquí se puede invitar a alguien o crear un grupo. Se da acceso por producto
+  - Settings (menu superior). User management
+- Desde el panel de Administración es posible revisar y crear grupos con sus permisos
+- Para dar acceso a un producto: En Productos (menu superior) en Adminnistración, tenemos Manage Access
+- Para crear un grupo, acceder al menu de grupos en Administration -> Directory -> Groups. Para añadir miembros en la creación del grupo, ya deben estar registrados en Jira. Cuando se le da a Show details del grupo, se pueden ver los miembros del grupo y los productos a los que puede acceder ese grupo
+- El modelo de permisos:
+  - Por nivel
+    - A nivel de sitio (site), es el más alto
+    - A nivel de aplicación
+    - A nivel de proyecto
+  - Tipo
+    - Los permisos globales de Jira se aplican a todos los proyectos, son independientes de los permisos específicos del proyecto. Van por aplicación/producto y se pueden ver desde Administration
+- Agregar personas a un proyecto gestionado por equipo: Dentro del proyecto, en Project Settings->Access. En la versión gratuita, la gente que invites al proyecto tendrá permiso de administrador y no se puede cambiar, en la versión de pago si.
+- Agregar personas a un proyecto gestionado por la empresa: Dentro del proyecto, en Project Settings->Pelople. En versión gratuita, desde aquí no se puede hacer, pero sí desde la pantalla de Adminsitration
+- Configuración de permisos en unproyecto gestionado por la empresa: Permite una configuración avanzada y por tanto organizar los permisos por esquema (conjuto de permisos que son asignados a un proyecto). En el proyecto, Project Settings-> Permissions
+
+<br><br>
+En resumen:
+- La administración del sitio es utilizada para administrar usuarios y grupos, acceso al sitio, productos, seguridad.
+- Los grupos permiten tener acceso al producto y a la administración
+- Los permisos globales de Jira aplican a todos los proyectos y son otorgados por medio de grupos.
+- Los permisos de un proyecto aplican al proyecto en particular.
+- Cada proyecto gestionado por el equipo, tiene tres tipos de roles: Administrador, Member y Viewer
+- Los proyectos gestionados por la empresa se manejan a través de esquemas de permisos, lo cual brinda mayor flexibilidad.
+
+<br>
+
+## 3.3. Opciones de configuración a destacar en un proyecto gestionado por equipo <span style="background-color:red;color:yellow">**TODO: add images**</span>
+- Se pueden redefinir los tipos de issues, añadiendo o eliminando campos a la misma (epicas, historias, tareas, subtareas, bugs)
+- En la parte de notificaciones se puede configurar las notificaciones que se mandn por correo electrónico y a quien.
+- En funciones (features) se pueden ver las funciones habilitadas a nivel de proyecto. En Apps puede agregar aplicaciones / addons (funcionalidades nativas que Jira no contempla)
+- En el RoadMap es donde se planifican las épcias del proyecto y orden de liberación de las mismas
+- En el backlog es donde se definen todas las issues del proyecto y se irán ejecutando en diferentes sprints
+- El tablero, donde se organizan las issues de cada sprint según su estado (el cual es configurable)
+- En informes se pueden sacar los reportes básicos de un proyecto next gen (gestionado por equipo)
+- En issues se pueden buscar las issues del proyecto filtrándolas
+- En la parte de Code es donde está la integración con Bitbucket
+- Project Pages es donde se integra con Confluence
+
+## 3.4 Opciones de configuración a destacar en un proyecto gestionado por empresa (clásico) <span style="background-color:red;color:yellow">**TODO: add images**</span>
+Un proyecto clásico posee todas las opciones de un proyecto next-gen, además de estas, se pueden destacar las siguentes:
+- Automation, permite automatizar tareas dentro de la gestión del proyecto. Se pueden usar predefinidas y también definir propias
+- En Summary es posible ver el resumen de todas las características del proyecto
+- Se pueden hacer issues personalizadas, definir su visibilidad, campos que tienen, etc
+- En Flujo de Trabajo, se pueden crear flujos de trabajos, que son los cambios de status y las reglas (de las issues). Se puede ver en sección de workflow
+- En Informes, hay más variedad de informes
+- Componetes es para agrupar funcionalidades en secciones
+- Versiones para la gestión de veriones
