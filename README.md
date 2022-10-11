@@ -624,3 +624,56 @@ La automatización de reglas/procesos permite ahorrar tiempo en tareas repetitiv
 - La feature de Automatización se puede acceder desde el board del proyecto, en la parte superior derecha el icono con forma de relampago. En la sección de Automatización existe el menú Biblioteca donde ya existen creadas reglas predefinidas
 - Establecer un Workflow comun para todos los proyectos y equipos ayuda a la horizontalidad entre los mismos. **PENDING, ON PROGRESS, QA TESTING (divisible) y DONE** son los estado aconsejados. Desde el Workflow dentro del board tb es posible establecer reglas relacionadas con las issues y sus estados.
 	
+<br><br>
+
+# 9. Productos de Atlassian de interés
+## 9.1. Confluence
+<span style="background-color:red;color:yellow">**TODO: add images**</span><br>
+Aplicación de Atalassian para crear y compartir documentos en un entorno colaborativo y distribuido (wiki). Compuesto por espacios/areas de trabajo que a su vez están compuestos por páginas. Cada espacio es como "un repositorio" independiente, se manejan independientemente tanto en contenido como en permisos. Puede haber espacios de grupo y personales. Las areas se suelen asignar a cada equipo, proyecto o departamenteo. Las páginas además permiten comentarios de los miembros.<br>
+Las páginas son documentos que pueden ser vistos y modificados por los miembros del equipo.<br>
+Características básicas de Confluence:
+- Crear y compartir
+- Versionado
+- Persona a persona
+- Integración con Jira
+- Extensible con addons
+- Creado para equipos
+
+Trabajar con confluence:
+- Lo primero que se hace es crear un espacio
+- Despues se configuran los permisos del espacio. Por grupos (perfiles), individualmente y para acceso anónimo (por defecto bloqueada)
+- COnfluence tiene una gran cantidad de plantillas que se pueden ajustar al tipo de proyecto.
+- Los documentos también tiene plantillas: Retrospectiva, toma de requisitos, remote team meetings, revisión de arquitectura, plan de proyecto, lanzamiento de producto
+
+Como se ha comentado una de las caracteristicas más importantes de Confluence es comentar, compartir y discutir el trabajo. Las páginas (documentos) permiten:
+- Comentarios en línea
+- Comentarios de la página, documento, archivo
+- Invitar para editar (colaboración)
+- Menciones (usando @usuario), notificaciones
+- Likes
+- Compartir
+- Integració ncon Jira:
+  - En Jira en sección "Páginas de proyecto" se pueden ver los documentos asociados
+  - Desde Confluence tb se pueden ver las issues del proyecto de Jira
+		
+## 9.2. Software testing con Jira + Zephyr
+<span style="background-color:red;color:yellow">**TODO: add images**</span><br>
+Es posible añadir un addon en Jira para el control de fases/ciclos de testing para ello:
+- En el proyecto Jira, desde la opción de menu "Aplicaciones" que lleva al Marketplace
+- Buscar Zephyr, aparecen varias opciones de Zephyr, usar Zephyr Squad en este caso (es la más básica) e instalar
+- Desde configuración del proyecto se puede habilitar el addon: Configuracion de Proyecto > Tipos de incidencias > Acciones > Edigar tipos de incidencias y aquí se puede añadir tipo de incidencia test (ahora disponible)
+- Una vez instalado y habilitado Zephyr, en el proyecto se permiten crear issues tipo test
+- Al agregar el addon aparecen nuevas opciones en el menú del proyecto:
+	- Test Metrics: Para ver las métricas de todo lo relacionado con la planificación y ejecución de pruebas
+	- Custom fields: Configuración de campos de los test
+	- Test: Casos de pruebas asociados a los ciclos de pruebas. Aquí se peude acceder al test y ejecutarlo (en Cycle summary), donde se abrirá con detalles y ver los pasos del mismo
+	- Search test: Busqueda d elos casos de pruebas
+- El testing se ejecuta por medio de ciclos, la forma de trabajar es crear un ciclo de pruebas y asociarlo a una versión del producto
+- A cada ciclo se les puede agregar issues tipo test, creadas previamente
+- Dentro de la prueba se pueden definir los pasos a ejecutar (opción Zephyr Test Details)	
+- "Comprobar si un mismo issue tipo test se puede añadir a varios ciclos / versiones del producto)
+
+## 9.3. Bitbucket
+<span style="background-color:red;color:yellow">**TODO: add images**</span><br>
+Es un respositorio basado en Git (como se ha explicado anteriormente). En ecosistemas basados en Jira y Confluence es bastante recomendable el uso de Bitbucket ya que las issues se pueden vincular directamente con ramas de un repositorio determinado, viendo así la evolución de la misma y facilitando el control de código.<br>
+Es usado en entornos profesionales ya que es aquí donde se tiene versión de pago de los productos. Su alternativa gratuita y comúnmente conocida es [GitHub](https://github.com/) la cual también se puede integrar con Jira.
