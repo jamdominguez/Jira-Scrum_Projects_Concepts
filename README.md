@@ -601,3 +601,26 @@ Se pueden crear los mismos reportes que con los proyectos next-gen además de ot
 - Reports de anlálisis de issues
 - Reports de pronostico y gestión (Forecast and management)
 - Otros
+
+<br><br>
+
+# 8. Automatización y Workflow
+<span style="background-color:red;color:yellow">**TODO: add images**</span><br>
+La automatización de reglas/procesos permite ahorrar tiempo en tareas repetitivas. Conceptos clave:
+- Reglas: Permiten automatizar acciones dentro del sistema en función de criterios que se pueden establecer. Se componen de 3 partes:
+  1. **Desencadenadores / Activadores (Triggers)**: Inician la regla (Ej: Al crear una issue) (Ej: Al cerrar una Tarea) (Ej: Al cerrar una User story)
+  2. **Condiciones**: Refinan la regla (aplican la lógica) (Ej: SI es tipo User story) (Ej. Verificar si depende de uns User story) (Ej: Verificar si pertenece a una epica)
+  3. **Acciones**: Realización de las acciones (Ej. Crear 3 Tareas relacionadas: Desarrollo, QA, Soporte) (Ej: Si todas las tareas de lstroy user dones, cerrar la user story) (Ej: Si están todalas las user story de esa epcia dones, cerrar la epica) (https://support.atlassian.com/cloud-automation/docs/jira-automation-actions/)
+- Incidencias ramificadas/relacionadas Las incidencias en Jira raramente están aisladas. Con frecuencia contienen subtareas, forman parte de un epic de mayor tamaño o simplemente están vinculadas a otras incidencias mediante determinadas relaciones. Esto significa que, al utilizar la automatización, a menudo es necesario aplicar las acciones no solo a la incidencia original que activó una regla, sino también a las incidencias relacionadas con la original (https://support.atlassian.com/cloud-automation/docs/branch-automation-rules-to-perform-actions-on-related-issues/) (https://www.atlassian.com/es/software/jira/automation-template-library#/rule-list?systemLabelId=all&page=1&pageSize=20&sortKey=name&sortOrder=ASC)
+- Valores inteligentes: Permiten acceder a una amplia gama de datos de incidencias dentro de tu sitio y manipularlos. Pueden añadir a las reglas una potencia y una complejidad significativas (https://support.atlassian.com/cloud-automation/docs/what-are-smart-values/).
+- Actor de regla: Es el usuario que la ejecuta. Debe tener los permisos relevantes para activarla y completar cualesquiera acciones que se realicen. El actor de la regla se establecerá como usuario de la aplicación de automatización.
+- Estado de regla: Puedes ver el estado de una regla de automatización para identificar si está activa o no. Si una regla está inactiva, no se ejecutará hasta que se habilite. El estado de una regla puede verse en su página de detalles (https://support.atlassian.com/cloud-automation/docs/enable-and-disable-jira-automation-rules/). Los estados son:
+  - **HABILITADA** La regla está activa.
+  - **DESHABILITADA** La regla no está en uso en este momento.
+  - **BORRADOR** La regla tiene cambios sin publicar.
+- Registro de auditoría: Cada regla cuenta con un registro de auditoría que puedes revisar para ver cuándo se ha activado, el resultado final de la ejecución y qué acciones se realizaron (https://support.atlassian.com/cloud-automation/docs/debug-an-automation-rule/).
+- Programación de tareas: No solo puede reducir el trabajo manual de tu equipo, sino que también asegura la consistencia y fiabilidad de tu flujo de trabajo.
+- Es posible crear reglas relacionadas con los cambios en el código. Para ello es necesario integrar el proyecto con Bitbucket, GitHub, Gitlab)
+- La feature de Automatización se puede acceder desde el board del proyecto, en la parte superior derecha el icono con forma de relampago. En la sección de Automatización existe el menú Biblioteca donde ya existen creadas reglas predefinidas
+- Establecer un Workflow comun para todos los proyectos y equipos ayuda a la horizontalidad entre los mismos. **PENDING, ON PROGRESS, QA TESTING (divisible) y DONE** son los estado aconsejados. Desde el Workflow dentro del board tb es posible establecer reglas relacionadas con las issues y sus estados.
+	
