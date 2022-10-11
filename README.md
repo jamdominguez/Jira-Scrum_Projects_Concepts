@@ -469,3 +469,62 @@ Al inicio de cada sprint es donde se deben puntuar las issues y planificar en co
 <span style="background-color:red;color:yellow">**TODO: add images**</span><br>
 - Desde la propia issue, se puede asignar, estimar y poner prioridad
 - No es buena practica añadir una issue a un sprint ya iniciado
+
+<br><br>
+
+# 6. Crear el RoadMap del Proyecto
+## 6.1. La planificación de lanzamiento o RoadMap
+<span style="background-color:red;color:yellow">**TODO: add images**</span><br>
+- Es el calendario de entrega del producto en sus diferentes versiones
+- Permite la alineación del equipo Scrum con el PO y stakeholders
+- Se puede hacer un lanzamiento después de la creación o liberación por etapas
+- El plan de lanzamiento se puede ir modificando según las necesidades del negocio
+- Las liberaciones (despliegues en PROD) no tiene por qué hacerse después de cada sprint, si no que se puede planificar cuando hacerlas, y depsués de cada sprint sólo mostrar lo hecho y subirlo a un entorno de UAT.
+- Hay que pensar cuando se quiere hacer las liberaciones y con qué (tiempo, producto), la tercera variable serían los recursos. Esta triada siempre se maneja como 2 fijas y 1 variables:
+  - Si se require en tal fecha con el prodcuto en el estado x, habrá que aumentar / disminuir lso recursos
+  - Si se quiere en tal fecha pero y los recursos fijos, habrá que cuadrar el producto a entregar
+  - Si se requiere el producto y recursos fijos, habrá que que cuadrar la fecha
+- La manera en la que Jira muestra el RoadMap tanto en proyectos clásicos como en next-gen es similar.
+- Es posible crear RoadMaps avanzados usando addons del marketplace de Jira (easy agile roadmap for jira)
+- Jira soporta versiones de forma nativa, cada versión del producto contendra unas determinadas issues que se liberarán en una determinada release. Las versiones sirven para:
+  - Organizar issues
+  - Ayudan a programar las siguientes releases
+  - Permiten definir fechas de metas
+  - Pueden ser usados en querys o reportes
+- Las versiones pueden tener tres estados:
+  - Unreleased
+  - Released
+  - Archived
+- ¿Como se agreaga una issue a una versión? Dentro de los campos de la issue uno es "Versiones corregidas" o "Fix Versions". La versión debe ser previamente creada en Jira antes de asignarla
+- Los componentes son otra funcionalidad de Jira que permite agrupar las issues, son subpartes de un proyecto desde el punto de vista de funcionalidad (módulo). Para agregar una issu a un componente se hace igual que con las versiones, un campo de la misma issue llamado "Comoponente" o "Component"
+  - Ayudana agrupar y organizar las issues por módulo
+  - Cada componente puede tener un responsable asignado
+  - Se admiten en un sólo nivel, es decir, no se puede crear un subcomponente de un componente
+- Estos cambios (versiones y componentes) se pueden hacer de manera masiva seleccionando varias issues
+	
+## 6.2. Como crear el RoadMap
+<span style="background-color:red;color:yellow">**TODO: add images**</span><br>
+El panel de RoadMap permite visualizar por semanas, meses o trimestre y tiene un filtro para buscar. Permite mover las epicas y marca los sprints en el calendario
+	
+## 6.3. Como crear un RoadMap avanzando
+<span style="background-color:red;color:yellow">**TODO: add images**</span><br>
+Buscando addons en el marketplace de jira, el addon comentado antes: easy agile roadmap for jira. Para ello, en el menú superior "Apps">"Explore more apps"
+	
+## 6.4 Versiones
+<span style="background-color:red;color:yellow">**TODO: add images**</span><br>
+- "Versiones" o "Releases" es una feature tanto de proyectos clasicos como next-gen, aunque es posible que en este ultimo esté desactivada y sea neceserio activarla
+- Las opciones de la version (release) nos permite: publicar, archivar, editar y eliminar
+- En cada issue se puede añadir la versión a la que pertenece (como se ha comentado antes), ya estará visible
+- Cuando se crea una versión aparece en el RoadMap como un "hito" de proyecto
+- Una vez todas las issues asignadas a la versión (release) estén completadas, se podrá publicar pulsando el botón en la pantalla de la versión
+- Una misma issue puede pertenecer a varias versiones
+
+## 6.5. Componentes
+<span style="background-color:red;color:yellow">**TODO: add images**</span><br>
+- Esta feature sólo está disponible para proyectos clásicos
+- Sirve para agurpar issues por funcionalidad (módulo)
+- Desde la opción "Componets" se puede crear
+- Los componentes se pueden editar por su no se tiene algún dato de la misma
+- Accediendo al componente se puede ver las issues asociadas (al igual que con las versiones)
+- En cada issue se puede añadir el componente al que pertenece (como se ha comentado antes), ya estará visible
+- Una misma issue puede pertenecer a varios componentes
