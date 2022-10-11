@@ -17,7 +17,7 @@ It is based in a [Udemy](https://www.udemy.com/) course.
 - RAM: 16GB
 - Environment: Windows 10
 - Browser: Google Chrome (80)
-- IDE: Visual Studio Code (1.43)
+- IDE: Visual Studio Code (1.71)
 - IDE Extensions: Markdown all in one
 
 <br><br>
@@ -268,7 +268,7 @@ Son fundamentos básicos para implementar el framework. Pueden aplicarse a cualq
 
 <br><br>
 
-# 3. Crear un proyecto con Jira Software
+# 3. Proyectos con Jira Software
 ## 3.1. Creación del proyecto <span style="background-color:red;color:yellow">**TODO: add images**</span>
 [Atlassian](https://www.atlassian.com/es) ofrece muchas plantillas para la creación del proyecto, pero depende del tipo de producto que tengas y proyecto que quieras hacer se ofrecen unas u otras plantillas. La plantilla Scrum es propia de Desarrollo Software y de lal producto Jira Software.
 <br>
@@ -327,3 +327,111 @@ Un proyecto clásico posee todas las opciones de un proyecto next-gen, además d
 - En Informes, hay más variedad de informes
 - Componetes es para agrupar funcionalidades en secciones
 - Versiones para la gestión de veriones
+
+<br><br>
+
+# 4. El Backlog
+## 4.1. Tipos de issues en Jira
+Las issues definen el tipo de unidad de trabajo que se registra en el proyecto. Existen de varios tipos según el trabajo que representen y sirven para organizar, dimensionar y planificar el desarrollo del producto. Se podría resumir en qué se usan para:
+- Registrar diferentes tipo de unidades de trabajo
+- Cada tipo puede tener diferentes campos, pantallas y workflow
+- Generar reportes sobre cada tipo específico
+
+### 4.1.1. Epic
+Funcionalidad grande que debe ser descompuesta en user stories (mayormente no se finaliza en un sprint)
+- Funcionalidad grande que se puede descomponer
+- Puede abarcar varios sprints, equipos, proyectos y tableros
+- Se puede utilizar como contener de multiples historias de usuario
+- Puede contener otros tipos de incidencias
+- Ayudan a orgnizar el trabajo y simplificar el Backlog
+
+### 4.1.2. User Story
+Funcionalidad que puede ser dimensionada para acabar en un sprint (Caso de uso, CU)
+- Requisito desde el punto de vista del usuario (CU) -> "Como" (rol de usuario), "Quiero" (objetivo), "Para poder" (beneficio)
+- Pueden estar asociadas o no a una épica
+- Pueden contener sub-tareas (tareas)
+
+### 4.1.3. Bug
+Es un error que debe ser corregido
+- Un defecto que requiere ser corregido
+- Durante los ciclos de testing se usan este tipo de issues para registrar los errores y tratarlos
+- Debe ser asignado a un miembro del equipo para ser corregido y posteriormente verficado por QA
+		
+### 4.1.4. Task
+Unidad simple de trabajo
+- No tiene porque estar relacionada con una funcionalidad co requisito de usuario
+- Se pueden utilizar para registrar requisitos no funcionales
+
+### 4.1.5. Subtarea: Es parte de una issue. Cualquier issue se puede dividir en subtareas
+- Debe tener una issue padre
+- Permite que una issue pueda ser descompuesta en unidades de trabajo más pequeña
+- Pueden ser descritas en un lenguaje más técnico que la issue padre
+  
+### 4.1.6. Personalizadas
+Para propositos específicos
+
+
+## 4.2. Crear el backlog del producto	
+- El Backlog inicial del prodcuto se crea el la fase de inicio del proyecto y contiene las hitorias de usuario y épicas que se han recogido como alcance inicial
+- Se detalla y mejora durante la fase de Planificación y Estimación
+- Se refina a lo largo del proyecto
+- La administración del Backlog es responsabilidad del PO
+- En Jira, el backlog es un conjunto de issues (de los tipos ya vistos)
+- Se pueden crear issues que cuelguen de una épica y otras issues que no
+- Depende si el proyecto es tipo next gen o clasico, las vistas varían y también como se muestran las cosas. Además de depender de la versión de Jira
+- Se puede asignar issues a una epica u otra arrastrando la issue sobre el menú de epicas directamente en el Backlog
+
+
+## 4.3. Registrar los criterios de aceptación
+- Brindan claridad al equipo respecto a lo que se espera de la historia d eusuario (deben ser precisos)
+- Eliminan la ambiguedad de los requisitos, ayudando a la alienación de las espectativas
+- Responsibilidad del PO apoyado por QA, definir y comunicar los criterios de aceptación al equipo Scrum
+- Brindan el contexto para que el PO y QA decidan si la historia de usuario se ha completado satisfactoriamente
+- Jira no tiene ningún campo para registrar los criterios de aceptación, por lo que la opción es crear un campo personalizado dentro de Historias de usuario desede Issues Type en el Project Settings
+
+### 4.3.1. Elementos a considerar en criterios de aceptación
+  1. Interfaz gráfica (aspecto, posición)
+  2. Validaciones: reglas de validación, mensajes de usuario
+  3. Comportamient: Qué pasa al pulsar un botón
+  4. Flujo: Hacia donde y como debe fluir la información
+  5. Resultado esperado
+  6. Seguridad (características de seguridad requeridas)
+  7. Rendimiento: velocidad o performance requerido
+
+
+## 4.4. Registrar estimaciones
+- Las estmiaciones son importantes para dimensionar el timepo y esfuerzo / complejidad para desarrollar una issue
+- En Jira se puede estimar con:
+  - Story points: Como dicta Scrum (se suele usar la serie de fibonacci: 1,2,3,5,8,13...)
+  - Tiempo: Lo permite Jira 
+- Existe varias técnicas para estimar las issues, pero hay que elegir una comun para todo el equipo. Al final el esfuerzo de hacer una epica será la suma de puntos de usuario de todas sus issues
+- En los proyectos clasicos además de la estimación por story points, se puede hacer por tiempo (en los next-gen no). También se puede usar un time tracking para el seguimiento de horas de la issue
+
+## 4.5. Ejemplo
+Nuestro cliente posee varios centros de fisioterapia y ve una oportunidad de negocio en asistir a sus pacientes en casa / negocio, en lugar de la clínica. Además, en la zona hay muchos centros deportivos que estarían dispuestos a tener este servicio también. Por otro lado también hay posibilidad de venta online de productos para deportistas y gente con problemas de movildad.
+Los usuarios de la aplicación tendrán su perfil donde podrán guardar sus fisioterapeutas preferidos, productos, etc, además de un registro de compras y contrataciones hechas.<br>
+
+De lo propuesto por el cliente podemos pensar (sin entrar en detalle) en varias funcionalidades grandes o **épicas** para la aplicación web:
+1. Login de usuario tanto con user/password como con Google o Facebook
+2. Sección de perfil, donde configurar datos personales y tener el registro de actividad
+3. Sección de búsqueda de profesional, dónde poder encontrar un profesional que se ajuste a las necesidades del usuario
+4. Sección de busqueda y compra de productos
+5. EXTRA: Sección de clases online de Yoga / Pilates
+6. EXTRA: Sección de consultoría online
+7. etc
+
+Una vez hecho el estudio de estas épicas, habría que entrar en detalle de las **user stories** que podrían componer cada una de ellas, Además de tomar los criterios de aceptación (AC) del cliente, los cuales, nos servirán para tener una batería de tests. Por ejemplo para la épica 3:
+1. Permitir busqueda por filtrado de varios campos como: Nombre, apellido, especialidad, años de experiencia, horario disponible (AC: - No contratación a partir de las 22h)
+2. Permitir busqueda por geolocalización (AC: - Selección desde propia ubicación; - Selección desde cualquier ubiación)
+3. Permitir la contratación de varios profesionales simultaneamente (AC: - Aplicar descuento; - Horarios en común; -etc)
+4. Permitir la contratación por largos periodos, no sólo de manera puntual (AC: - Aplicar descuento)
+5. etc
+
+Una vez diferenciadas las user stories se deben planificar los sprints según necesidad del cliente. Es lo que nos permite una metodología ágil, hacer el producto productivo lo antes posible. Por ejemplo, el cliente considera que lo que necesitaría principalmente sería la épica 3 para empezar a obtener beneficios. Se podría hacer la 3 y la contratación vía telefónica hasta que la épica 2 estuviese completada y por tanto se pudiera contratar a través de la aplicación.
+
+Antes de abordar la codificación del producto habría que hacer un estudio de los sistemas y plafaformas necesarios. Servidores, bases de datos, etc. Además de la tecnología a usar para desarrollar según las características del producto y habilidades del equipo Scrum disponible. Para los trabajos de configuración e integración de sistemas están pensadas las issues tipo **task**, ya que su fin no es funcional.
+
+En este punto empezaría el desarrollo por sprints. Para cada user story que se vaya abordando, el equipo técnico ha de hacer un análisis para diferenciar **subtasks** y así poder estructurar el trabajo en unidades más pequeñas, viendo sus relaciones y bloqueos, pudiendo asignarlas así a diferentes miembros del equipo para mejorar el rendimiento del mismo. Este análisis ha de ser documentado y basado en los criterios de aceptación del cliente.<br>
+Al inicio de cada sprint es donde se deben puntuar las issues y planificar en consecuencia de la capacidad del equipo. Aunque si la entrega del producto es fija, se deberán modificar el equipo para adaptarlo a la capacidad de cada sprint. Aquí lo ideal, es ser conscientes de la capacidad de trabajo del equipo y llegar a un concenso entre entregas de valor y sprints necesarios.
+
+
