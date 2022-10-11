@@ -34,7 +34,7 @@ It is based in a [Udemy](https://www.udemy.com/) course.
   - [1.4. Jerarquia de Jira dentro de Atlassian:](#14-jerarquia-de-jira-dentro-de-atlassian)
   - [1.5. Tipos de issues (incidencias)](#15-tipos-de-issues-incidencias)
   - [1.6. Productos Atalssian integrables con Jira](#16-productos-atalssian-integrables-con-jira)
-  - [1.6.1. Confluence](#161-confluence)
+    - [1.6.1. Confluence](#161-confluence)
     - [1.6.2. Bamboo](#162-bamboo)
     - [1.6.3. Bitbucket](#163-bitbucket)
     - [1.6.4. Probar productos Atlassian](#164-probar-productos-atlassian)
@@ -124,7 +124,7 @@ Es la herramienta numero uno para la gestión de proyectos: planificación, segu
   - Sub-Task
 	
 ## 1.6. Productos Atalssian integrables con Jira
-## 1.6.1. Confluence
+### 1.6.1. Confluence
 Es una herramienta eficaz para crear, compartir, organizar y discutir el trabajo con tu equipo. Permite crear documentos en línea de manera colaborativa (algunas plantillas que provee: linea de tiempo, programar un proyecto, diseño de producto, minutas de reuniones).
 [Confluence](https://www.atlassian.com/es/software/confluence) tiene los siguientes casos de uso:
   - Crear y compartir contenido
