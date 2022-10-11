@@ -528,3 +528,76 @@ Buscando addons en el marketplace de jira, el addon comentado antes: easy agile 
 - Accediendo al componente se puede ver las issues asociadas (al igual que con las versiones)
 - En cada issue se puede añadir el componente al que pertenece (como se ha comentado antes), ya estará visible
 - Una misma issue puede pertenecer a varios componentes
+
+<br><br>
+
+# 7. Reportes y filtros
+## 7.1. Busquedas y filtros
+<span style="background-color:red;color:yellow">**TODO: add images**</span><br>
+- Existe una busqueda rápida general en la parte superior de Jira: Incidencias, tableros, proyectos, filtros y personas
+- Existen filtros predeterminados dependiendo de la sección del Jira en la que se esté, por ejemplo en la sección de Issues en proyectos clásicos en el menú de la izquierda.
+- Existen filtros básicos, por ejemplo en la secciónd e Issues en la parte superior
+- Existen busqueda avanzada, por ejemplo en la secciónd e Issues en la parte superior a la derecha. Permite JQL, java query language, también seleccionar columnas
+- El listado de issues se puede ver en formato lista, valga la redundancia, y en formato detallado
+- También es posible exportar la busqueda / filtraje realizado en diferentes formatos
+- En los tableros también existen filtros de busqueda
+		
+## 7.2. Aprender JQL
+<span style="background-color:red;color:yellow">**TODO: add images**</span><br>
+JQL es el lenguaje usado para hacer busquedas avanzadas. Se puede consultar información en:
+- https://www.atlassian.com/es/software/jira/guides/expand-jira/jql#advanced-search
+- https://www.youtube.com/watch?v=v0kqoCTzGNI
+	
+## 7.3. Revisión y retrospectiva del Sprint
+Explicación de reportes en https://support.atlassian.com/jira-software-cloud/docs/generate-a-report/
+
+### 7.3.1. Demostración y revisión
+<span style="background-color:red;color:yellow">**TODO: add images**</span><br>
+- Se demuestran los entregables del sprint al PO y stakeholders (interesados relevantes)
+- El proposito de esta reunión es lograr la aprobación y aceptación del PO respecto al producto o servicio
+- Los entregables que cumplen los criterios de aceptación son aceptados
+- Issues incompletas o rechazadas
+  - Si los entregables no cumplen los criterios de aceptación o las pruebas de QA, son rechazadas
+  - Las issues que no pasan las purebas de QA se devuelven al responsable asignado para corregir los defects siempre y cuando haya tiempo antes del fin del sprint
+  - Las issues que al final no vayan a entregarse se pueden mover a otro sprint o al backlog del prodcuto
+  - Dentro de la sección "Reports" se pueden extraer reports predeterminados (los 3 primeros son los más interesantes, leer la descirpción)
+- Patrones que se deben evitar:
+  - El equipo termina el sprint de forma temprana, no están asumiendo suficiente trabajo
+  - El equipo excede las fechas planificadas para el sprint, se está comprometiendo demasiado trabajo
+  - La línea de trabajo completado en la gráfica de burndown produce caídas pronunciadas en lugar de graudales, se debe descomponer el trabajo en tareas más pequeñas.
+  - El PO agrega o cambia el alcance en mitad de un sprint		
+### 7.3.2. Retrospectiva del sprint
+- El equipo scrum asiste completo, el PO no es obligatorio
+- El SM organiza y modera la reunión
+- Es un modelo importante del framework de "inpección y adaptación" de Scrum y es el ultimo paso de un sprint
+- Esencial celebrar la reunión en un entorno abierto y relajado para fomentar la completa participación de todos los miembros
+- Objetivos de la retrospectiva:
+  1. Identificar mejores prácticas para seguir haciendo
+  2. Cosas a mejorar
+  3. Problemas y bloqueos encontrados
+- Resultados de la retrospectiva:
+  1. Mejoras accionables acordadas
+  2. Elementos de acción asignados
+  3. Elementos no funcionales propuestos para el backlog del producto
+  4. Registro de retrospectiva del sprint (documentar). Se puede usar confluence que posee una plantilla
+  5. Lecciones aprendidas del equipo Scrum
+	
+### 7.3.3. Reportes en proyectos next-gen (gestionados por el equipo)
+<span style="background-color:red;color:yellow">**TODO: add images**</span><br>
+- Burnup Report: Compara los story points con las fechas. La línea diagonal indica la progresión ideal de avance y se ha de intentar que la línea de trabajo sea lo más parecida a esta. Esto se consigue dimensionando correctamente las historias de usuario en tareas y asignandolas en consecuencia. Refleja el trabajo realizado.
+  - Dimensinamiento adecuado de tareas
+  - Ajuste de sotry points a cada tareas
+  - Asignación consecuente		
+- Burndown Report: Igual qu el anterior pero refleja el trabajo restante.
+- Velocidad: Compara los story points planificados contra los realizados. Sirve para medir la capacidad/velocidad del equipo de manera aproximada, ya que el que se realicen más o menos story points a veces puede depender de bloqueos u otros agentes externos. Se puede sacar una media de la velocidad del equipo.
+- Acumulative Diagram Flow: Permite ver el avance del proyecto, viendo la relación entre issues totales, en progreso, QA y hechas. En diferentes rangos de tiempos. Esta herramienta se usa mucho en Lin y en Kanban.
+- Burndown chart: Gráfica similar a la anterior pero en lugar de ir sumando story point, va restando a los totales del sprint.
+	
+### 7.3.4. Reportes en proyectos clasicos (gestionados por la empresa)
+<span style="background-color:red;color:yellow">**TODO: add images**</span><br>
+Se pueden crear los mismos reportes que con los proyectos next-gen además de otros añadidos. Aquí hay muchos tipos de report y se separan por tipos:
+- Reports Agile: Relacionados con la metodología. Aquí se puede destacar el "Sprint report" que es una versión extendida del "Burndown" pero además lista las issues abordadas y se puede crear la reptrospectiva a partir de él conectando con Confluence(aunque en la versión que yo he probado no veo esto)
+- Reports de desarrollo: Se vincula el proyecto con el repositorio para realizarlo
+- Reports de anlálisis de issues
+- Reports de pronostico y gestión (Forecast and management)
+- Otros
