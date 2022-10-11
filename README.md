@@ -269,7 +269,8 @@ Son fundamentos básicos para implementar el framework. Pueden aplicarse a cualq
 <br><br>
 
 # 3. Proyectos con Jira Software
-## 3.1. Creación del proyecto <span style="background-color:red;color:yellow">**TODO: add images**</span>
+## 3.1. Creación del proyecto
+<span style="background-color:red;color:yellow">**TODO: add images**</span><br>
 [Atlassian](https://www.atlassian.com/es) ofrece muchas plantillas para la creación del proyecto, pero depende del tipo de producto que tengas y proyecto que quieras hacer se ofrecen unas u otras plantillas. La plantilla Scrum es propia de Desarrollo Software y de lal producto Jira Software.
 <br>
 Una vez elegida la plantilla se puede leer la descripción y tras pulsar "usar plantilla" da a elegir el tipo de proyecto. Gestionado por Equipo (next-gen) o Gestionado por la Empresa.<br>
@@ -277,7 +278,8 @@ Si el equipo es pequeño (hasta 25 personas) y no hay mucha experiencia en Scrum
 <br>
 En el proceso se puede indicar que se va a conectar el proyecto Jira con otros productos de [Atlassian](https://www.atlassian.com/es) ([Bitbucket](https://bitbucket.org/) o [Confluence](https://www.atlassian.com/es/software/confluence)) o con otros externos como [GitHub](https://github.com/).
 
-## 3.2. Gestión de usuarios, grupos y permisos <span style="background-color:red;color:yellow">**TODO: add images**</span>
+## 3.2. Gestión de usuarios, grupos y permisos
+<span style="background-color:red;color:yellow">**TODO: add images**</span><br>
 - Una vez creado el proyecto se requiere invitar a los componentes del equipo al mismo. Hay dos modos de hacerlo:
   - People (menu superior). Aquí se puede invitar a alguien o crear un grupo. Se da acceso por producto
   - Settings (menu superior). User management
@@ -306,7 +308,8 @@ En resumen:
 
 <br>
 
-## 3.3. Opciones de configuración a destacar en un proyecto gestionado por equipo <span style="background-color:red;color:yellow">**TODO: add images**</span>
+## 3.3. Opciones de configuración a destacar en un proyecto gestionado por equipo
+<span style="background-color:red;color:yellow">**TODO: add images**</span><br>
 - Se pueden redefinir los tipos de issues, añadiendo o eliminando campos a la misma (epicas, historias, tareas, subtareas, bugs)
 - En la parte de notificaciones se puede configurar las notificaciones que se mandn por correo electrónico y a quien.
 - En funciones (features) se pueden ver las funciones habilitadas a nivel de proyecto. En Apps puede agregar aplicaciones / addons (funcionalidades nativas que Jira no contempla)
@@ -318,7 +321,8 @@ En resumen:
 - En la parte de Code es donde está la integración con Bitbucket
 - Project Pages es donde se integra con Confluence
 
-## 3.4 Opciones de configuración a destacar en un proyecto gestionado por empresa (clásico) <span style="background-color:red;color:yellow">**TODO: add images**</span>
+## 3.4 Opciones de configuración a destacar en un proyecto gestionado por empresa (clásico)
+<span style="background-color:red;color:yellow">**TODO: add images**</span><br>
 Un proyecto clásico posee todas las opciones de un proyecto next-gen, además de estas, se pueden destacar las siguentes:
 - Automation, permite automatizar tareas dentro de la gestión del proyecto. Se pueden usar predefinidas y también definir propias
 - En Summary es posible ver el resumen de todas las características del proyecto
@@ -434,4 +438,34 @@ Antes de abordar la codificación del producto habría que hacer un estudio de l
 En este punto empezaría el desarrollo por sprints. Para cada user story que se vaya abordando, el equipo técnico ha de hacer un análisis para diferenciar **subtasks** y así poder estructurar el trabajo en unidades más pequeñas, viendo sus relaciones y bloqueos, pudiendo asignarlas así a diferentes miembros del equipo para mejorar el rendimiento del mismo. Este análisis ha de ser documentado y basado en los criterios de aceptación del cliente.<br>
 Al inicio de cada sprint es donde se deben puntuar las issues y planificar en consecuencia de la capacidad del equipo. Aunque si la entrega del producto es fija, se deberán modificar el equipo para adaptarlo a la capacidad de cada sprint. Aquí lo ideal, es ser conscientes de la capacidad de trabajo del equipo y llegar a un concenso entre entregas de valor y sprints necesarios.
 
+<br><br>
 
+# 5. Definición y ejecuciónd e sprints
+## 5.1. Crear un sprint y el backlog del sprint
+<span style="background-color:red;color:yellow">**TODO: add images**</span><br>
+- Dentro de la sección de backlog es posible crear los sprint añadiendo detalles del mismo como duración, fechas, metas, etc
+- Es importante que las estimaciones estén indicadas antes de iniciar el sprint
+- En la parte superior derecha del sprint se pueden ver los story points del sprint, los que estan en progreso y los terminados en los proyectos next-gen. En los clasicos aparece la opción de planificar sprint
+	
+## 5.2. Iniciar y finalizar un sprint
+<span style="background-color:red;color:yellow">**TODO: add images**</span><br>
+- Una vez creado el backlog del sprint se puede iniciar , y entonces será visible en el board
+- El tablero es configurable, podemos añadir estado de las issues
+- Al termianr/completar el sprint (botón) aparece un dialogo informativo, si alguna issue queda sin terminar, este dialogo da la opción de devolverla al backlog del proyecto o moverla a otro sprint.
+- Cuando se completa un sprint se puede visualizar su report en la sección Reports en "Sprint burndown chart"
+- En proyectos clasicos existe la sección "Active Sprint" donde se puede ver el estado del sprint actual. En proyectos next-gen es la sección "Board"
+	
+## 5.3. Configurar un tablero de sprint
+<span style="background-color:red;color:yellow">**TODO: add images**</span><br>
+- Una vez iniciado el Sprint se puede ir al tablero y configurarlo, cambiando por ejemplo el nombre de las columnas, agregar columnas
+- Una buena practica si se encuentra un error en fase de QA es crear un bug, asociarlo a la historia en la que se produjo el error y añadirlo al sprint. AL relacionarlo con el icono de link dentro de la issue podemos elegir, el tipo de relacion (bloqueda, bloque, relacionada, etc). También se debe linkear la epica a la que pertenezca, por lógica a la epica de la Historia donde se produjo el error
+- En el Board también podemos filtrar por texto, epicas, tipo, miembros.
+- En el Board también existe la opción de automatización  para programar compilaciones, deployments, etc. Con integración con Bitbucket se podría programar una compilación
+- El Board tb tiene otras opciones como edición, agrupación, etc pero son menos relevantes que las mencionadas
+- Entre proyectos next-gen y clasicos las forma en que se presenta el Board es practicamente igual, pero si que es más rapido tratar con el next-gen. Anque en clasicos cada fase también tiene un estado asociado que tienen relación co los flujos de trabajo
+- Los flujos de trabajo indican la relación entre las diferentes fases/estados de un sprint
+
+## 5.4. Asignar issue al equipo
+<span style="background-color:red;color:yellow">**TODO: add images**</span><br>
+- Desde la propia issue, se puede asignar, estimar y poner prioridad
+- No es buena practica añadir una issue a un sprint ya iniciado
