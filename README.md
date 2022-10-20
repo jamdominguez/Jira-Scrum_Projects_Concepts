@@ -510,7 +510,7 @@ Al inicio de cada sprint es donde se deben puntuar las issues y planificar en co
 
 <br><br>
 
-# 5. Definición y ejecuciónd e sprints
+# 5. Definición y ejecución e sprints
 ## 5.1. Crear un sprint y el backlog del sprint
 <span style="background-color:red;color:yellow">**TODO: add images**</span><br>
 - Dentro de la sección de backlog es posible crear los sprint añadiendo detalles del mismo como duración, fechas, metas, etc
