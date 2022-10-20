@@ -99,9 +99,9 @@ Inicialmente se utilizó para el desarrollo de software, sirviendo de apoyo para
 Es la herramienta numero uno para la gestión de proyectos: planificación, seguimeinto y reportes
 
 ## 1.2. Casos de uso para Jira
-  - Los Product Owner (PO): Pueden crear el backlog del producto, programar sprint, lineas de tiempo
-  - Los Porject Manager (PM) y Scrum Master (SM): Pueden gestionar el proyecto, el alacance, el backlog, los impedimentos, recursos
-  - Los developers: Llevar el control de las actividades, seguimiento de bugs
+  - Los Product Owner (PO): Pueden crear el backlog del producto, programar sprints, lineas de tiempo, etc.
+  - Los Porject Manager (PM) y Scrum Master (SM): Pueden gestionar el proyecto, el alacance y el backlog  del mismo, los impedimentos, recursos, etc.
+  - Los developers: Llevar el control de las actividades, seguimiento de bugs, etc.
 
 ## 1.3. Utilidades de Jira
   - Planificación ágil
@@ -149,7 +149,7 @@ Los productos de [Atlassian](https://www.atlassian.com/es) tienen periodos de pr
 Scrum es un marco de trabajo (framework) para la gestión agil de proyectos. Se puede utilizar en cualquier tipo de proyecto, pero sobre todo en los software. El concepto es dividir proyectos grandes en etapas más pequeñas, revisar y adaptar a lo largo del camino
 
 ## 2.1. ¿Por qué utilizar Scrum?
-- Adraptable
+- Adaptable
   - Proyectos adaptables
   - Incorporación al cambio
 - Transparencia
